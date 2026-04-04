@@ -91,6 +91,10 @@ body {
   transform: translateY(-0.2em);
 }
 
+.noneDecor {
+  text-decoration: none !important;
+}
+
 .full-btn,
 .button__icon,
 .button__text {
