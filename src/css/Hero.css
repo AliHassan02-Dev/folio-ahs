@@ -1,0 +1,97 @@
+.heroWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.heroWrapper .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroWrapper .container h2 {
+  color: white;
+  font-size: 10vw;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heroWrapper .container h4 {
+  color: var(--theme-color);
+  font-family: var(--secondary-font);
+  font-size: 6vw;
+}
+
+.heroWrapper .container .btns-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE CSS STARTS */
+
+@media (max-width: 767px) {
+  .heroWrapper {
+    height: auto;
+    padding: 200px 30px;
+  }
+
+  /* PRIMARY BUTTON CSS */
+  .outline-btn {
+    font-size: 13px;
+  }
+
+  .outline-btn .button_top {
+    padding: 14px 28px;
+  }
+
+  /* SECONDARY-BTN-CSS */
+  .full-btn {
+    position: relative;
+    width: 250px;
+    padding: 14px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 567px) {
+  .heroWrapper {
+    height: auto;
+    padding: 200px 30px;
+  }
+
+  /* PRIMARY BUTTON CSS */
+  .outline-btn {
+    font-size: 10px;
+  }
+
+  .outline-btn .button_top {
+    padding: 12px 20px;
+  }
+
+  /* SECONDARY-BTN-CSS */
+  .full-btn {
+    position: relative;
+    width: 190px;
+    padding: 12px 8px;
+    font-size: 10px;
+  }
+
+  .full-btn:hover .button__icon {
+    width: 190px;
+  }
+}
+
+@media (max-width: 420px) {
+  .heroWrapper .container .btns-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

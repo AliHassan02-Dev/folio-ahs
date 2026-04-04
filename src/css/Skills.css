@@ -1,0 +1,140 @@
+.skillWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.skillWrapper .container {
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  padding: 50px 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillWrapper .container .left {
+  width: 100%;
+  max-width: 40%;
+}
+
+.skillWrapper .container .left h2 {
+  color: var(--theme-color);
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+}
+
+.skillWrapper .container .left p {
+  color: white;
+  font-size: 18px;
+  font-family: var(--text-font);
+  margin: 10px 0px 40px 0px;
+}
+
+.skillWrapper .container .right {
+  width: 100%;
+  max-width: 55%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1400px) {
+  .brutalist-button {
+    width: 160px;
+    height: 50px;
+  }
+
+  .button-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brutalist-button {
+    width: 140px;
+    height: 42px;
+  }
+
+  .button-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skillWrapper .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skillWrapper .container .left,
+  .skillWrapper .container .right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skillWrapper .container .left p {
+    margin: 0px !important;
+    width: 100% !important;
+  }
+
+  .skillWrapper .container .right {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .brutalist-button {
+    width: 200px;
+    height: 70px;
+  }
+
+  .button-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brutalist-button {
+    width: 170px;
+    height: 55px;
+  }
+
+  .button-text {
+    font-size: 13px;
+  }
+
+  .skillWrapper .container .left h2 {
+    font-size: 30px;
+  }
+
+  .skillWrapper .container .left p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 567px) {
+  .brutalist-button {
+    width: 100%;
+    min-width: 220px;
+    height: 55px;
+  }
+
+  .button-text {
+    font-size: 12px;
+  }
+
+  .skillWrapper .container .right {
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+}

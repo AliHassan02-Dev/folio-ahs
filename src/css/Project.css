@@ -1,0 +1,204 @@
+.projectsWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.projectsWrapper .container {
+  width: 100%;
+  max-width: 80%;
+  padding: 50px 30px;
+  margin: auto;
+}
+
+.projectsWrapper h2 {
+  text-align: center;
+  font-size: 4vw;
+  font-family: var(--primary-font);
+  color: var(--theme-color);
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+/* horizontal scroll */
+#horizontal-scroll {
+  width: 100%;
+  padding: 160px 0;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 35vw;
+}
+
+.horizontal > div {
+  padding: 0 2vw;
+}
+
+.horizontal .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  color: #f6f2e8;
+  cursor: pointer;
+}
+
+.horizontal .card .infoBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding: 40px 20px;
+  border-radius: 10px;
+  border: 1px solid #3e3e3e;
+}
+
+.horizontal .card .infoBar h4 {
+  margin-top: 50px;
+  font-size: 1.8vw;
+  color: var(--theme-color);
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.horizontal .card .infoBar p {
+  font-size: 16px;
+  font-family: var(--text-font);
+  color: white;
+}
+
+.horizontal .card .imageBox {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: -50px;
+  z-index: 9;
+  box-shadow: 4px 6px 11px #24242464;
+}
+
+.horizontal .card .imageBox img {
+  width: 100%;
+  /* box-shadow: 0px 10px red; */
+  object-fit: cover;
+}
+
+.horizontal > div:last-child {
+  padding: 0 6vw 0 4vw;
+}
+
+/* ===== 3D Hover Setup ===== */
+.horizontal .card {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.horizontal .card .imageBox {
+  transform-style: preserve-3d;
+}
+
+.horizontal .card .imageBox {
+  transform: translateZ(40px);
+  will-change: transform;
+}
+
+.hoverIndicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #000000a1;
+  backdrop-filter: blur(8px);
+  border: 1px solid #3e3e3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  z-index: 9999;
+}
+
+.hoverIndicator span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  font-family: var(--primary-font);
+}
+
+.card a {
+  text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+  .horizontal .card {
+    width: 45vw;
+  }
+  .horizontal {
+    padding-left: 28vw;
+  }
+
+  .horizontal .card .infoBar h4 {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .horizontal .card .infoBar p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .hoverIndicator {
+    width: 110px;
+    height: 110px;
+  }
+
+  .hoverIndicator span {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--primary-font);
+  }
+
+  .projectsWrapper h2 {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 567px) {
+  .horizontal .card {
+    width: 80vw;
+  }
+  .horizontal {
+    padding-left: 16vw;
+  }
+  .horizontal > div {
+    padding: 0 4vw;
+  }
+
+  .horizontal .card .infoBar h4 {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .horizontal .card .infoBar p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .projectsWrapper h2 {
+    font-size: 28px;
+  }
+
+  .hoverIndicator span {
+    font-size: 7px;
+  }
+}
