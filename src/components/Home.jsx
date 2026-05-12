@@ -56,7 +56,7 @@ const Home = () => {
     <div className="heroWrapper">
       <div className="container">
         <h2>Ali Hassan</h2>
-        <h4>Junior Frontend Developer</h4>
+        <h4>Web Developer And Designer</h4>
         <div className="btns-row">
           <OutlineBtn linkRef={"#projectScroll"} btnText={"View My Work"} />
           <FullBtn/>
