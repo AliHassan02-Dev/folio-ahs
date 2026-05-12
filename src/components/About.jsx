@@ -50,11 +50,7 @@ const About = () => {
         <h4>
           <span className="aboutHighlight">Hey, I’m Ali Hassan 👋</span>
           <br />
-          I’m a junior frontend developer who enjoys building clean, responsive,
-          and user-friendly websites. I focus on turning ideas and designs into
-          functional interfaces using modern web technologies. I’m always eager
-          to learn, improve my skills, and create experiences that look good and
-          work smoothly on every device.
+          I am a passionate Web Developer and Designer with a strong focus on WordPress development and modern UI design. I have experience designing websites in Photoshop and Figma and converting designs into responsive, user-friendly websites. Along with WordPress, I also work with custom front-end development using HTML, CSS, JavaScript, and React (Vite). Currently, I am expanding my skill set by learning backend technologies including Node.js, Express.js, and MongoDB. I enjoy creating clean, functional, and visually appealing web experiences.
         </h4>
         {/* </div> */}
       </div>
